@@ -68,6 +68,13 @@
         color: var(--grayish-blue);
       }
 
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -80,29 +87,36 @@
     </style>
   </head>
   <body>
-    <article class="card">
-      <img class="qrcode" src="images/image-qr-code.png" />
-      <div class="text">
-        <h1>Improve your front-end skills by building projects</h1>
-        <p class="description">
-          Scan the QR code to visit Frontend Mentor and take your coding skills
-          to the next level
+    <main>
+      <article class="card">
+        <img
+          class="qrcode"
+          src="images/image-qr-code.png"
+          alt="Link to the Frontend Mentor website." />
+        <div class="text">
+          <h1>Improve your front-end skills by building projects</h1>
+          <p class="description">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <div class="attribution">
+        <p>
+          Challenge by
+          <a
+            href="https://www.frontendmentor.io?ref=challenge"
+            target="_blank"
+            rel="noreferrer"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://www.briancross.ca" target="_blank" rel="noreferrer"
+            >Brian Cross</a
+          >.
         </p>
       </div>
-    </article>
-    <div class="attribution">
-      <p>
-        Challenge by
-        <a
-          href="https://www.frontendmentor.io?ref=challenge"
-          target="_blank"
-          rel="noreferrer"
-          >Frontend Mentor</a
-        >. Coded by
-        <a href="https://www.briancross.ca" target="_blank" rel="noreferrer"
-          >Brian Cross</a
-        >.
-      </p>
-    </div>
+    </footer>
   </body>
 </html>
