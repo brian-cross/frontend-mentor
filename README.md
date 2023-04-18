@@ -4,5 +4,5 @@ These are my solutions to various [Frontend Mentor](https://www.frontendmentor.i
 
 ## Newbie
 
-[QR Code Component](./newbie/qr-code-component/)
-[Results Summary Component](./newbie/results-summary-component/)
+- [QR Code Component](./newbie/qr-code-component/)
+- [Results Summary Component](./newbie/results-summary-component/)
