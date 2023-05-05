@@ -11,7 +11,7 @@
       href="./assets/images/favicon-32x32.png" />
 
     <link rel="stylesheet" href="style.css" />
-    <script src="index.ts" defer></script>
+    <script src="index.ts" type="module" defer></script>
 
     <title>Frontend Mentor | Dictionary web app</title>
   </head>
@@ -37,11 +37,14 @@
             </g>
           </svg>
           <div
+            id="font-selector"
             class="relative grow flex items-center justify-end h-8 pr-4 gap-4 border-r border-grey-200">
-            <div class="font-bold text-right text-sm cursor-pointer">
+            <div
+              id="current-font"
+              class="font-bold text-right text-sm cursor-pointer">
               Sans Serif
             </div>
-            <button class="h-full">
+            <button id="font-list-arrow" class="h-full">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="14"
@@ -55,19 +58,29 @@
               </svg>
             </button>
             <div
-              class="absolute top-full font-bold bg-white z-50 rounded-2xl shadow-[0_5px_30px_0_rgba(0,0,0,0.1)]">
+              id="font-list"
+              class="invisible absolute top-full font-bold bg-white z-50 rounded-2xl shadow-[0_5px_30px_0_rgba(0,0,0,0.1)]">
               <ul class="w-48 p-8 flex flex-col gap-4">
-                <li class="font-sans cursor-pointer hover:text-fuscia">
+                <li
+                  data-font-option="font-sans"
+                  class="font-sans cursor-pointer hover:text-fuscia">
                   Sans Serif
                 </li>
-                <li class="font-serif cursor-pointer hover:text-fuscia">
+                <li
+                  data-font-option="font-serif"
+                  class="font-serif cursor-pointer hover:text-fuscia">
                   Serif
                 </li>
-                <li class="font-mono cursor-pointer hover:text-fuscia">Mono</li>
+                <li
+                  data-font-option="font-mono"
+                  class="font-mono cursor-pointer hover:text-fuscia">
+                  Mono
+                </li>
               </ul>
             </div>
           </div>
           <div
+            id="theme-toggle"
             role="button"
             tabindex="0"
             class="w-10 h-5 mx-4 bg-grey-300 rounded-full relative hover:bg-fuscia">
