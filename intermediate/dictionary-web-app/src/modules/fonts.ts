@@ -18,7 +18,6 @@ const fonts = {
 gsap.set(fontList, { autoAlpha: 0 });
 
 const handleFontListDropdown = e => {
-  console.log(e.target);
   if (fontListHidden) {
     gsap.set(fontListOptions, { autoAlpha: 0, yPercent: -100 });
     gsap.to(fontList, { autoAlpha: 1, duration: 0.3 });
