@@ -1,11 +1,11 @@
 import { gsap } from "gsap";
 
-let fontListHidden = true;
-
 const currentFont = document.getElementById("current-font");
 const fontList = document.getElementById("font-list");
 const fontListArrow = document.getElementById("font-list-arrow");
 const fontListOptions = document.querySelectorAll("#font-list li");
+
+let fontListHidden = true;
 const fonts = {
   "font-sans": "Sans Serif",
   "font-serif": "Serif",
