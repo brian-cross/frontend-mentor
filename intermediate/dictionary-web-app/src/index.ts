@@ -1,3 +1,2 @@
-import * as Fonts from "./modules/fonts";
-
-Fonts.init();
+import "./modules/fonts";
+import "./modules/search";

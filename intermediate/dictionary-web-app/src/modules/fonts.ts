@@ -53,20 +53,18 @@ const setFont = (fontClassName: string) => {
   localStorage.setItem("font", fontClassName);
 };
 
-export const init = () => {
-  const savedFont = localStorage.getItem("font");
+const savedFont = localStorage.getItem("font");
 
-  if (!savedFont) {
-    setFont(defaultFont);
-  } else {
-    setFont(savedFont);
-  }
+if (!savedFont) {
+  setFont(defaultFont);
+} else {
+  setFont(savedFont);
+}
 
-  [currentFont, fontListArrow, ...fontListOptions].forEach(node => {
-    if (node !== null) node.addEventListener("click", handleFontListDropdown);
-  });
+[currentFont, fontListArrow, ...fontListOptions].forEach(node => {
+  if (node !== null) node.addEventListener("click", handleFontListDropdown);
+});
 
-  fontListOptions.forEach(node =>
-    node.addEventListener("click", handleFontSelection)
-  );
-};
+fontListOptions.forEach(node =>
+  node.addEventListener("click", handleFontSelection)
+);
